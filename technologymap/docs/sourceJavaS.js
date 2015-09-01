@@ -140,7 +140,7 @@ function isChecked()
 function loadData()
 {
 
-	 d3.json("/SeliminSite/docs/Database.json",function(error,data){
+	 d3.json("/docs/Database.json",function(error,data){
  		 var secondArr=false;
 		var i = 0;
 		while(!secondArr)
@@ -155,7 +155,7 @@ function loadData()
 				secondArr = true;
 			}
 		}
-		d3.json("/SeliminSite/docs/nodes.json",function(error,datav){
+		d3.json("/docs/nodes.json",function(error,datav){
 			
 		var j = 0;
 		while(j<datav.length)
